@@ -1,4 +1,7 @@
-![ci](https://github.com/React-Avancado/boilerplate/workflows/ci/badge.svg)
+<h4 align="center">
+	🚧 Não consegui fazer tudo oque queria :c, mas ta entregue 🚧
+</h4>
+
 ## What is inside?
 
 Algumas paradinhas da hora que utilizei
