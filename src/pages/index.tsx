@@ -1,4 +1,4 @@
-import { GetStaticProps } from 'next'
+import { GetServerSideProps } from 'next'
 import HomeTemplate from 'templates/Home'
 
 export type itemProps = {
@@ -16,7 +16,7 @@ export default function Home({ data }: DefaultPropsData) {
   return <HomeTemplate data={data} />
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const res = await fetch(
     `https://pokeapi.co/api/v2/pokemon?limit=1154&offset=0`
   )
