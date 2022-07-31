@@ -48,7 +48,6 @@ const Modal = ({
       )
       .catch((err) => console.log(err))
   }, [name])
-  console.log(data.abilities)
   return (
     <S.Wrapper open={open} onClick={closeModal}>
       <S.Content pokeType={pokeType}>
