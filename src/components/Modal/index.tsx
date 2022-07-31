@@ -5,6 +5,15 @@ import { formatTag } from 'utils/formatNumber'
 import { PokeTypes } from 'utils/pokeTypes'
 import * as S from './styles'
 import Image from 'next/image'
+
+const initialValues = {
+  name: 'name',
+  abilities: [],
+  image: 'https://c.tenor.com/29Ok5pc0ivAAAAAd/gatinho-gato.gif',
+  typeList: [],
+  stats: []
+}
+
 export type modalProps = {
   open?: boolean
   name?: string
@@ -19,7 +28,7 @@ const Modal = ({
   pokeType = 'grass',
   tag = '154'
 }: modalProps) => {
-  const [data, setData] = useState<any>()
+  const [data, setData] = useState<any>(initialValues)
   useEffect(() => {
     fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
       .then((response) => {
@@ -50,7 +59,7 @@ const Modal = ({
 
         <S.BoxImage>
           <Image
-            src={data?.image ? data.image : '/img/pokeex.svg'}
+            src={data.image}
             alt="Picture of the author"
             width={'250'}
             height={'250'}

@@ -13,6 +13,6 @@ module.exports = withPWA({
     disable: !isProd
   },
   images: {
-    domains: ['raw.githubusercontent.com', 'localhost:3000']
+    domains: ['raw.githubusercontent.com', 'localhost:3000', 'c.tenor.com']
   }
 })
