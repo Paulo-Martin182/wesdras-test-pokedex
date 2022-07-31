@@ -48,7 +48,7 @@ const Modal = ({
       )
       .catch((err) => console.log(err))
   }, [name])
-
+  console.log(data.abilities)
   return (
     <S.Wrapper open={open} onClick={closeModal}>
       <S.Content pokeType={pokeType}>
@@ -76,8 +76,11 @@ const Modal = ({
 
         <S.AbilitiesTitle pokeType={pokeType}>Habilidades</S.AbilitiesTitle>
         <S.AbilitiesBx>
-          <S.AbilitiesBtn>overgrow</S.AbilitiesBtn>
-          <S.AbilitiesBtn>chlorophyl</S.AbilitiesBtn>
+          {data?.abilities.map((item: { ability: { name: any } }) => (
+            <S.AbilitiesBtn key={item.ability.name}>
+              {item.ability.name}
+            </S.AbilitiesBtn>
+          ))}
         </S.AbilitiesBx>
 
         {data?.stats.map(
