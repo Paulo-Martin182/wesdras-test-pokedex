@@ -1,5 +1,5 @@
 export type PokeTypes = {
-  pokeType?:
+  pokeType:
     | 'normal'
     | 'fire'
     | 'water'

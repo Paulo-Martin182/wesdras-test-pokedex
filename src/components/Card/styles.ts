@@ -8,13 +8,14 @@ export const Wrapper = styled.div<StylesCardTypes>`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0;
+    margin: 10px;
     padding: 0;
-    width: 140px;
-    height: 156px;
+    width: 170px;
+    height: 180px;
     border: 1px solid ${theme.colors[pokeType]};
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
   `}
 `
 
