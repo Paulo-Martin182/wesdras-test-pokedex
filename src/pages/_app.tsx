@@ -10,7 +10,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>React Avançado - Boilerplate</title>
+        <title>WesDras Pokedex</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
