@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 import { CardProps } from '.'
 
 export type StylesCardTypes = Pick<CardProps, 'pokeType'>
@@ -16,6 +17,9 @@ export const Wrapper = styled.div<StylesCardTypes>`
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    ${media.lessThan('medium')`
+    width: 100%;
+    `}
   `}
 `
 

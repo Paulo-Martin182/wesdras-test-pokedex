@@ -18,7 +18,7 @@ export default function Home({ data }: DefaultPropsData) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const res = await fetch(
-    `https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0`
+    `https://pokeapi.co/api/v2/pokemon?limit=1154&offset=0`
   )
   const data = await res.json()
   const pokeImages = data.results.map((item: { url: string }) => item.url)

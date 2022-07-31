@@ -7,16 +7,18 @@ export type CardProps = {
   tag: string
   image: string
   title: string
+  onClick: () => void
 } & Pick<PokeTypes, 'pokeType'>
 
 const Card = ({
   pokeType = 'fire',
   tag = MockCard.tag,
   image = MockCard.image,
-  title = MockCard.title
+  title = MockCard.title,
+  onClick
 }: CardProps) => {
   return (
-    <S.Wrapper pokeType={pokeType}>
+    <S.Wrapper pokeType={pokeType} onClick={onClick}>
       <S.Content>
         <S.Tag pokeType={pokeType}>#{formatTag(tag)}</S.Tag>
         <S.Image src={image} />
