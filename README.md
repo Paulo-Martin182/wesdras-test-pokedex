@@ -2,6 +2,7 @@
 	🚧 Não consegui fazer tudo oque queria :c, mas ta entregue 🚧
 </h4>
 
+
 ## What is inside?
 
 Algumas paradinhas da hora que utilizei
@@ -45,3 +46,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Stobyook
 
 ![Alt Text](https://github.com/Paulo-Martin182/wesdras-test-pokedex/blob/main/public/img/storybook.gif)
+
+
+### Oque conclui de diferente, que não pude fazer melhor por fazer correndo...
+
+- [x] Testes utilizando Jest && Cypress
+- [x] Storybook
+- [ ] Variaveis de ambiente dinamica
+- [ ] Melhor organização com TS
+- [ ] N formas de fetch...
