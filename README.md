@@ -13,6 +13,7 @@ Algumas paradinhas da hora que utilizei
 - [Prettier](https://prettier.io/)
 - [Husky](https://github.com/typicode/husky)
 
+
 ## Getting Started
 
 First, run the development server:
@@ -40,4 +41,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Stobyook
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/Paulo-Martin182/wesdras-test-pokedex/blob/main/public/img/storybook.gif)
