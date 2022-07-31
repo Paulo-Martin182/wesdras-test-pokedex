@@ -4,7 +4,7 @@ import { Key, useEffect, useState } from 'react'
 import { formatTag } from 'utils/formatNumber'
 import { PokeTypes } from 'utils/pokeTypes'
 import * as S from './styles'
-
+import Image from 'next/image'
 export type modalProps = {
   open?: boolean
   name?: string
@@ -49,7 +49,12 @@ const Modal = ({
         </S.HeaderContent>
 
         <S.BoxImage>
-          <S.Image src={data?.image} />
+          <Image
+            src={data?.image ? data.image : '/img/pokeex.svg'}
+            alt="Picture of the author"
+            width={'250'}
+            height={'250'}
+          />
         </S.BoxImage>
 
         <S.BoxTypes>

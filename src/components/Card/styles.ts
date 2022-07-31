@@ -36,7 +36,7 @@ export const Base = styled.div<StylesCardTypes>`
   ${({ theme, pokeType }) => css`
     background: ${theme.colors[pokeType]};
     width: 100%;
-    height: 36px;
+    min-height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,5 +60,8 @@ export const Title = styled.h2`
     font-size: ${theme.font.sizes.small};
     color: ${theme.colors.white};
     font-weight: ${theme.font.light};
+    ${media.lessThan('medium')`
+      font-size: 12px;
+    `}
   `}
 `

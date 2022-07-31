@@ -2,6 +2,7 @@ import * as S from './styles'
 import { MockCard } from './Mock'
 import { PokeTypes } from 'utils/pokeTypes'
 import { formatTag } from 'utils/formatNumber'
+import Image from 'next/image'
 
 export type CardProps = {
   tag: string
@@ -21,7 +22,13 @@ const Card = ({
     <S.Wrapper pokeType={pokeType} onClick={onClick}>
       <S.Content>
         <S.Tag pokeType={pokeType}>#{formatTag(tag)}</S.Tag>
-        <S.Image src={image} />
+        <Image
+          src={image}
+          alt="Picture of the author"
+          width={300}
+          height={400}
+          objectFit={'fill'}
+        />
       </S.Content>
       <S.Base pokeType={pokeType}>
         <S.Title>{title}</S.Title>
